@@ -67,8 +67,8 @@ SUBROUTINE setup_nscf ( newgrid, xq, elph_mat )
   !
   ! ... variables for iterative diagonalization
   ! ... Davdson: isolve=0, david=4 ; CG: isolve=1, david=1
-  isolve = 0
-  david  = 4
+  isolve = 1
+  david  = 1
   nbndx = david*nbnd
   max_cg_iter=20
   natomwfc = n_atom_wfc( nat, ityp, noncolin )
