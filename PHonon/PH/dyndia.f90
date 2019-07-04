@@ -101,7 +101,7 @@ subroutine dyndia (xq, nmodes, nat, ntyp, ityp, amass, iudyn, dyn, w2)
         unorm = unorm + dyn (mu, nu_i) * CONJG(dyn (mu, nu_i) )
      enddo
      if (iudyn /= 0) then
-         write (iudyn, '(" (",6f10.6," ) ")') &
+         write (iudyn, '(" (",6f38.34," ) ")') &
           (dyn (mu, nu_i) / sqrt (unorm) , mu = 1, 3 * nat)
      else
          z(:,nu_i)=dyn (:, nu_i) / sqrt (unorm)
